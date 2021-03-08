@@ -10,7 +10,7 @@ body {
 
 .app {
   background-image: url('./assets/cold-bg.jpg');
-  background-size: cover;
+  background-size: contain;
   background-position: bottom;
   transition: 0.4 ease;
 }
@@ -26,8 +26,9 @@ main {
 }
 
 .search-box {
-  width: 100%;
+  width: 50%;
   margin: 0 0 75px;
+  
 }
 
 .search-box .search-bar {
@@ -42,7 +43,7 @@ main {
 
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 0px 0px 16px 16px;
-  margin-top: -25px;
+  /*margin-top: px;*/
 
   box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
   
@@ -87,8 +88,8 @@ main {
   padding: 15px 25px;
 
   color: #FFF;
-  font-size: 102px;
-  font-weight: 900;
+  font-size: 70px;
+  font-weight: 600;
 
   text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
   text-align: center;

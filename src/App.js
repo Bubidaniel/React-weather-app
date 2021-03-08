@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import{   Button, Alert }from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 const api = {
   key: "1d766a240d04e0e505a74ed511214e9e",
   base: "https://api.openweathermap.org/data/2.5/"
@@ -33,8 +36,17 @@ function App() {
   }
 
   return (
+
     <div className={(typeof weather.main != "undefined") ? ((weather.main.temp > 16) ? 'app warm' : 'app') : 'app'}>
       <main>
+
+<div className="alert">
+  <Alert variant="">Check out your country's weather.</Alert>
+</div>
+    <div className="button" type="button">
+  <Button>Click me</Button></div>
+  <br></br>
+
         <div className="search-box">
           <input 
             type="text"
